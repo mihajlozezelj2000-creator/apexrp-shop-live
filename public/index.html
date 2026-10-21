@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Apex RP Roleplay — pridruži se zajednici, istraži server i pogledaj ponudu u zvaničnoj Apex Roleplay prodavnici.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Apex RP Roleplay — zvanična prodavnica">
+  <meta property="og:description" content="Pridruži se Apex RP zajednici i pogledaj ponudu zvanične prodavnice.">
+  <title>Apex RP Roleplay — zvanična prodavnica</title>
+  <style>
+    :root{--bg:#0b0d12;--panel:#11141c;--muted:#a7adbb;--text:#f5f6fa;--lime:#c6ff5e;--line:rgba(255,255,255,.11)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:900;letter-spacing:.08em;display:flex;align-items:center;gap:10px}.brand-mark{width:38px;height:38px;border-radius:50%;object-fit:cover;border:1px solid rgba(198,255,94,.55)}.links{display:flex;gap:28px;color:#c5c9d3;font-size:14px}.links a:hover{color:var(--lime)}.nav-cta,.button{background:var(--lime);color:#11150b;border:0;border-radius:9px;padding:12px 17px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}.nav-cta{font-size:13px}
+    .hero{min-height:620px;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 76% 40%,rgba(174,255,62,.12),transparent 35%),linear-gradient(110deg,#0b0d12 25%,rgba(11,13,18,.82)),repeating-linear-gradient(135deg,transparent 0 44px,rgba(255,255,255,.025) 45px 46px)}.hero-logo{position:absolute;width:min(43vw,490px);right:4%;top:50%;transform:translateY(-50%);border-radius:50%;opacity:.92;filter:drop-shadow(0 0 48px rgba(27,255,49,.13));pointer-events:none}.hero-content{position:relative;z-index:1;max-width:690px;padding:85px 0}.eyebrow{color:var(--lime);text-transform:uppercase;letter-spacing:.22em;font-size:12px;font-weight:900}.hero h1{font-size:clamp(46px,8vw,92px);line-height:.98;letter-spacing:-.065em;margin:20px 0}.hero h1 span{color:var(--lime)}.hero p{color:#b5bac5;line-height:1.75;max-width:540px;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button.secondary{background:transparent;border:1px solid var(--line);color:var(--text)}.button:hover,.nav-cta:hover{transform:translateY(-2px);filter:brightness(1.07)}.status{display:flex;align-items:center;gap:9px;color:#c5c9d3;font-size:13px;margin-top:34px}.dot{height:8px;width:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 15px var(--lime)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}.stat{padding:25px 28px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{display:block;font-size:22px}.stat span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em;margin-top:6px;display:block}
+    section{padding:88px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:30px}.section-head h2{font-size:clamp(32px,5vw,48px);letter-spacing:-.05em;margin:9px 0 0}.section-head p{max-width:380px;color:var(--muted);line-height:1.65;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:26px;background:var(--panel);border:1px solid var(--line);border-radius:14px;min-height:210px;transition:.2s}.card:hover{border-color:rgba(198,255,94,.45);transform:translateY(-3px)}.icon{font-size:24px}.card h3{margin:24px 0 9px;font-size:18px}.card p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+    .join{background:linear-gradient(130deg,rgba(198,255,94,.09),transparent 55%),var(--panel);border:1px solid var(--line);border-radius:18px;padding:clamp(28px,6vw,60px);display:flex;align-items:center;justify-content:space-between;gap:30px}.join h2{font-size:clamp(30px,5vw,46px);letter-spacing:-.05em;margin:10px 0}.join p{color:var(--muted);line-height:1.7;margin:0;max-width:570px}.join-actions{display:flex;gap:10px;flex-wrap:wrap}.copy-note{font-size:12px;color:var(--muted);margin-top:12px;min-height:18px}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:13px}.footer-in{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:720px){.links{display:none}.hero{min-height:550px}.hero-logo{width:min(66vw,340px);right:-8%;top:18%;opacity:.3}.hero-content{padding:75px 0}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line);padding:19px 4px}.stat:last-child{border-bottom:0}.cards{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:14px}.join{display:block}.join-actions{margin-top:24px}.nav{height:68px}}
+    .shop{padding-top:86px}.shop-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:22px 28px}.shop-card{height:205px;background:#101010;border:1px solid rgba(255,255,255,.025);border-radius:4px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;transition:.18s}.shop-card:hover{background:#171a17;border-color:rgba(198,255,94,.35);transform:translateY(-3px)}.shop-card svg{width:140px;height:140px;position:absolute;top:21px;stroke:#ddd;stroke-width:7;fill:none;stroke-linejoin:miter;stroke-linecap:square}.shop-card span{font-weight:900;font-size:20px;line-height:1.05;text-align:center;text-shadow:0 2px 6px #000;position:absolute;top:132px;max-width:95%;color:#fff}
+    @media(max-width:900px){.shop-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.shop-card{height:190px}}
+    @media(max-width:480px){.shop-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.shop-card{height:165px}.shop-card svg{width:118px;height:118px;top:16px}.shop-card span{font-size:17px;top:111px}}
+    /* Apex-specific package layout: distinct from the reference grid */
+    .shop-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+    .shop-card{height:124px;justify-content:flex-start;align-items:flex-start;padding:20px;border-radius:14px;background:linear-gradient(145deg,#151a19,#101217 72%);border:1px solid rgba(255,255,255,.08)}
+    .shop-card:hover{background:linear-gradient(145deg,#1a2418,#12151a 72%);border-color:rgba(198,255,94,.55)}
+    .shop-card svg{display:none}
+    .shop-card:before{content:"✦";width:34px;height:34px;border-radius:10px;background:rgba(198,255,94,.12);color:var(--lime);display:grid;place-items:center;font-size:18px;margin-bottom:12px}
+    .shop-card:nth-child(2):before{content:"⌘"}.shop-card:nth-child(3):before{content:"⚔"}.shop-card:nth-child(4):before{content:"★"}.shop-card:nth-child(5):before{content:"▦"}.shop-card:nth-child(6):before{content:"♜"}.shop-card:nth-child(7):before{content:"♟"}.shop-card:nth-child(8):before{content:"↗"}.shop-card:nth-child(9):before{content:"✈"}.shop-card:nth-child(10):before{content:"↻"}.shop-card:nth-child(11):before{content:"＋"}.shop-card:nth-child(12):before{content:"◷"}.shop-card:nth-child(13):before{content:"◉"}
+    .shop-card span{position:static;text-align:left;font-size:15px;line-height:1.2;text-shadow:none;max-width:100%;margin-top:auto}
+    @media(max-width:900px){.shop-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.shop-card{height:124px}}
+    @media(max-width:600px){.shop-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.shop-card{height:118px;padding:15px}.shop-card span{font-size:14px}}
+    .shop-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+    .shop-card{height:132px;padding:18px;background:#12151a;border-radius:12px;box-shadow:inset 0 1px rgba(255,255,255,.035)}
+    .shop-card:first-child{grid-column:span 2;grid-row:span 2;height:auto;min-height:280px;padding:25px;background:radial-gradient(circle at 85% 12%,rgba(198,255,94,.2),transparent 35%),linear-gradient(145deg,#1d281b,#12151a 65%);border-color:rgba(198,255,94,.28);justify-content:flex-end}
+    .shop-card:first-child:before{width:54px;height:54px;font-size:25px;margin-bottom:auto;background:rgba(198,255,94,.18)}
+    .shop-card:first-child:after{content:"POPULARNO";position:absolute;top:24px;right:22px;color:var(--lime);font-size:10px;font-weight:900;letter-spacing:.14em}
+    .shop-card:first-child span{font-size:25px}
+    @media(max-width:900px){.shop-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.shop-card:first-child{grid-column:span 3;grid-row:auto;min-height:160px;height:160px}.shop-card:first-child:before{margin-bottom:8px}}
+    @media(max-width:600px){.shop-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.shop-card{height:118px;padding:15px}.shop-card span{font-size:14px}.shop-card:first-child{grid-column:span 2;min-height:150px;height:150px}.shop-card:first-child span{font-size:21px}}
+    .product-panel{margin-top:28px;padding:28px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#11151a,#0c0e12)}.product-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}.product-head h3{font-size:30px;margin:6px 0 0;letter-spacing:-.04em}.product-head p{color:var(--muted);margin:0;font-size:13px}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.product-card{background:#15191f;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:16px;display:flex;flex-direction:column;min-height:190px}.product-art{height:84px;border-radius:9px;background:radial-gradient(circle at 70% 25%,rgba(198,255,94,.18),transparent 40%),linear-gradient(135deg,#202a21,#101318);display:grid;place-items:center;color:var(--lime);font-size:29px;font-weight:900;letter-spacing:.05em}.product-card h4{font-size:16px;line-height:1.3;margin:14px 0 7px}.product-price{font-size:13px;color:var(--muted);margin-bottom:14px}.add-cart{margin-top:auto;border:0;border-radius:8px;padding:11px;background:var(--lime);color:#12150c;font-weight:850;cursor:pointer}.add-cart:hover{filter:brightness(1.08)}
+    .cart-dock{position:fixed;z-index:10;bottom:18px;right:18px;background:#151a14;border:1px solid rgba(198,255,94,.4);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:16px;box-shadow:0 12px 40px #0009}.cart-dock[hidden]{display:none}.cart-dock span{font-size:13px}.cart-dock button,.cart-close{background:var(--lime);border:0;border-radius:8px;padding:10px 13px;font-weight:850;cursor:pointer;color:#12150c}
+    #cartDialog{width:min(480px,calc(100% - 30px));max-height:80vh;border:1px solid rgba(198,255,94,.35);border-radius:16px;background:#11151a;color:var(--text);padding:24px;box-shadow:0 20px 80px #000b}#cartDialog::backdrop{background:#000b}#cartDialog h3{margin:0 0 16px;font-size:24px}.cart-items{display:grid;gap:9px;max-height:45vh;overflow:auto}.cart-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px;background:#1a1f25;border-radius:9px;font-size:14px}.cart-row button{background:none;color:#ff9c9c;border:0;cursor:pointer}.cart-foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px;gap:12px}.cart-note{font-size:12px;color:var(--muted);margin-top:12px}
+    .payment-area{margin-top:18px;border-top:1px solid var(--line);padding-top:16px}.payment-area h4{margin:0 0 12px;font-size:15px}.payment-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}.payment-tab{height:48px;border:1px solid transparent;border-radius:12px;background:#17131a;color:#d5d2d8;font-weight:800;text-align:left;padding:0 14px;cursor:pointer}.payment-tab[aria-selected="true"]{background:#0879f9;color:#fff}.card-fields-form[hidden],.paypal-choice[hidden],#cardPaymentPanel[hidden]{display:none}.card-field-label{display:block;font-size:12px;font-weight:750;margin:0 0 7px}.card-fields-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.card-field-shell{height:47px;border:1px solid #39333e;border-radius:11px;background:#19151c;padding:0 13px;display:flex;align-items:center;min-width:0}.card-field-shell>div{height:24px;width:100%;min-width:0}.card-number-shell{gap:8px}.card-number-shell #cardNumberField{flex:1}.payment-brands{display:flex;align-items:center;gap:4px;flex-shrink:0}.payment-brands span{background:#f5f6fa;color:#102b55;border-radius:3px;padding:3px 4px;font-size:8px;font-weight:950;letter-spacing:-.05em;font-style:italic}.payment-brands span:nth-child(2){color:#d83239;font-style:normal;font-size:7px}.payment-status{min-height:18px;color:#b9c0ca;font-size:12px;line-height:1.5;margin-top:10px}.paypal-choice[hidden]{display:none}.paypal-choice>div{min-height:44px}.paypal-unavailable{color:#ffd891}.pay-card-button{width:100%;margin-top:14px;height:45px;border:0;border-radius:8px;background:#0879f9;color:white;font-weight:800;cursor:pointer}.pay-card-button:disabled{opacity:.55;cursor:not-allowed}
+    .accepted-payments{display:flex;align-items:center;gap:8px}.accepted-payments span{height:31px;min-width:52px;padding:0 9px;display:inline-flex;align-items:center;justify-content:center;background:#f5f6fa;border-radius:5px;color:#102b55;font-size:12px;font-weight:950;font-style:italic;letter-spacing:-.04em}.accepted-payments span:nth-child(2){color:#171717;font-style:normal;letter-spacing:-.08em}.accepted-payments span:nth-child(3){background:#17305a;color:#fff;font-style:normal;letter-spacing:-.06em}.footer-payments{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.footer-payments small{font-size:11px;color:var(--muted)}
+    @media(max-width:700px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-panel{padding:17px}.product-head{display:block}.product-head p{margin-top:10px}}
+    @media(max-width:440px){.product-grid{grid-template-columns:1fr}.cart-dock{left:12px;right:12px;bottom:12px;justify-content:space-between}}
+    /* Keep the product panel readable even inside a narrow embedded browser. */
+    .product-head{display:block}
+    .product-head p{margin-top:10px;max-width:48ch;line-height:1.5}
+    .product-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));width:100%}
+    .product-card{min-width:0;width:100%;overflow:hidden}
+    .product-art{display:flex;align-items:center;justify-content:center;gap:12px;min-width:0}
+    .product-art span{font-size:15px;opacity:.65;letter-spacing:.08em}
+    .add-cart{width:100%;white-space:normal;line-height:1.2}
+    .product-view{min-height:100vh;padding:0 0 80px;background:#050607;width:100%}
+    .product-view[hidden]{display:none}
+    .store-hero{height:250px;display:flex;align-items:flex-start;justify-content:center;padding:48px 20px;background:radial-gradient(ellipse at 50% 110%,rgba(198,255,94,.16),transparent 48%),linear-gradient(180deg,rgba(5,7,8,.48),#050607),repeating-linear-gradient(135deg,#202722 0 2px,#131918 2px 90px);position:relative}
+    .store-brand{font-size:clamp(38px,5.5vw,64px);font-weight:1000;letter-spacing:-.04em;text-shadow:0 4px 24px #000;display:flex;align-items:center;gap:16px}.store-brand img{width:62px;height:62px;border-radius:50%;object-fit:cover}
+    .store-layout{width:min(1320px,calc(100% - 56px));margin:-20px auto 0;position:relative;display:grid;grid-template-columns:285px minmax(0,1fr);gap:48px;align-items:start}
+    .store-sidebar{background:#101010;border:1px solid #303030;border-radius:4px;padding:10px 0;display:grid;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}
+    .store-sidebar a{padding:13px 23px;color:#c5c5c5;font-weight:650;font-size:15px;border-left:3px solid transparent}.store-sidebar a:hover,.store-sidebar a.active{color:#66c4e8;border-left-color:#66c4e8;background:rgba(102,196,232,.06)}
+    .product-view .product-head{padding:24px;background:#101010;border:1px solid #303030;border-radius:4px;margin-bottom:22px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .product-view .product-head .eyebrow{display:none}.product-view .product-head h3{font-size:36px;color:#65bddc;margin:0}.product-view .product-head p{max-width:300px;text-align:right;color:#b8bdc3;line-height:1.5}
+    .product-view .product-grid{grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
+    .product-view .product-card{min-height:300px;padding:20px 18px;background:#0e0e0e;border:1px solid #303030;border-radius:4px}
+    .product-view .product-art{height:150px;font-size:34px;background:radial-gradient(circle at 50% 40%,rgba(198,255,94,.12),transparent 54%),linear-gradient(135deg,#151a1a,#090b0d);position:relative;overflow:hidden}
+    .product-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:9px}
+    .product-art img[src$="swift.png"]{filter:brightness(.78) contrast(1.08) saturate(.88)}
+    .product-art .product-id{position:absolute;right:8px;bottom:8px;background:#050607c9;border-radius:4px;padding:5px 7px}
+    .product-view .product-card h4{font-size:18px}.product-view .product-price{font-size:15px;color:#f2f2f2}.product-view .add-cart{padding:14px;background:#0d5056;color:#071013;border-radius:2px}
+    .product-view .product-head h3{color:var(--category-accent,#65bddc)}
+    .product-view .product-art{background:radial-gradient(circle at 50% 38%,color-mix(in srgb,var(--item-accent,#c6ff5e) 26%,transparent),transparent 54%),linear-gradient(135deg,#171b1e,#090b0d);color:var(--item-accent,#c6ff5e);flex-direction:column;gap:5px}
+    .product-art .product-symbol{font-size:46px;line-height:1;opacity:1;letter-spacing:normal;color:var(--item-accent)}.product-art .product-id{font-size:10px!important;letter-spacing:.2em;opacity:.75;color:#d8dde0}
+    body.product-page>.nav,body.product-page>#siteMain,body.product-page>footer{display:none}
+    @media(max-width:850px){.store-layout{grid-template-columns:220px minmax(0,1fr);gap:22px;width:calc(100% - 32px)}.product-view .product-grid{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}}
+    @media(max-width:640px){.store-hero{height:190px;padding:34px 12px}.store-brand img{width:46px;height:46px}.store-layout{display:block;width:calc(100% - 24px);margin-top:-18px}.store-sidebar{position:static;display:flex;overflow-x:auto;max-height:none;margin-bottom:16px;white-space:nowrap}.store-sidebar a{padding:13px 15px;border-left:0;border-bottom:3px solid transparent}.store-sidebar a.active{border-left:0;border-bottom-color:#66c4e8}.product-view .product-head{display:block;padding:19px}.product-view .product-head h3{font-size:29px}.product-view .product-head p{text-align:left;margin-top:8px}.product-view .product-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}.product-view .product-card{min-height:260px}.product-view .product-art{height:125px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#pocetna"><img class="brand-mark" src="images/apex-roleplay-logo.png" alt=""> APEX ROLEPLAY</a>
+    <nav class="links"><a href="#o-gradu">O gradu</a><a href="#paketi">Paketi</a><a href="#prednosti">Prednosti</a><a href="#pridruzi-se">Pridruzi se</a></nav>
+    <a class="nav-cta" href="#pridruzi-se">UDJI U GRAD <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="siteMain">
+    <section class="hero" id="pocetna"><img class="hero-logo" src="images/apex-roleplay-logo.png" alt="Apex Roleplay logo"><div class="wrap hero-content">
+      <div class="eyebrow">Tvoj grad. Tvoja pravila. Tvoja prica.</div>
+      <h1>Dobrodosao u<br><span>Apex Roleplay.</span></h1>
+      <p>Izgradi ime, upoznaj ekipu i pronadji svoj put. Grad je pun prilika — na tebi je da odlucis kako ces ih iskoristiti.</p>
+      <div class="actions"><a class="button" href="#pridruzi-se">ZAPOCNI PRICU <span aria-hidden="true">→</span></a><a class="button secondary" href="#o-gradu">ISTRAZI GRAD</a></div>
+      <div class="status"><span class="dot"></span> Apex Roleplay je otvoren za nove igrace</div>
+    </div></section>
+    <div class="wrap stats" aria-label="Informacije o zajednici"><div class="stat"><b>Aktivna zajednica</b><span>Igraci i staff su tu za tebe</span></div><div class="stat"><b>Raznovrsne mogucnosti</b><span>Pronadji svoj stil igre</span></div><div class="stat"><b>Nova prica svaki dan</b><span>Tvoj izbor menja grad</span></div></div>
+    <section id="paketi" class="shop"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Apex Roleplay</div><h2>Paketi i pogodnosti</h2></div><p>Izaberi kategoriju i pronadji pogodnosti za svoju pricu u gradu.</p></div><div class="shop-grid">
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Vip &amp;<br>Master</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Haker</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Hitmen</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Battle<br>Pass</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Organizacija</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Dodatci<br>za mafiju</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Vozila</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Helikopter</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Unban &amp;<br>Unjail</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Quality of<br>Life</span></a>
+      <a class="shop-card" href="#pridruzi-se"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 39 32 18h56l14 21v64H18zM18 39h84M32 18l-9 21m65-21 9 21M47 19l-5 20m31-20 5 20M18 57h84M49 39v24h22V39"/></svg><span>Skidanje Discord<br>Muted rola</span></a>
+      <div class="product-panel" id="productPanel" hidden></div>
+    </div></div></section>
+    <section id="o-gradu"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Pronadji svoje mesto</div><h2>Sta te ceka u gradu?</h2></div><p>Bilo da zelis miran pocetak ili zivot pun akcije, ovde mozes da napravis pricu po svojoj meri.</p></div>
+      <div class="cards"><article class="card"><div class="icon">🏙️</div><h3>Zivot u gradu</h3><p>Upoznaj ljude, istrazi lokacije i postani deo zajednice koja grad cini zivim.</p></article><article class="card"><div class="icon">🚘</div><h3>Posao i napredak</h3><p>Pronadji posao, razvij vestine i korak po korak izgradi svoju buducnost.</p></article><article class="card"><div class="icon">🤝</div><h3>Ekipa i dogadjaji</h3><p>Pridruzi se dogadjajima, upoznaj novu ekipu i stvaraj uspomene zajedno.</p></article></div>
+    </div></section>
+    <section id="prednosti" style="padding-top:0"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Dobrodosao medju svoje</div><h2>Grad koji se gradi zajedno.</h2></div><p>Postuj druge, igraj fer i pomozi da svima bude lepo. Dobra prica pocinje dobrom zajednicom.</p></div><div class="cards"><article class="card"><div class="icon">🛡️</div><h3>Podrska staff tima</h3><p>Ako ti zatreba pomoc, obrati se staff timu kroz predvidjene kanale.</p></article><article class="card"><div class="icon">📢</div><h3>Sve vazne novosti</h3><p>Prati Discord obavestenja da ne propustis novosti i najavljene dogadjaje.</p></article><article class="card"><div class="icon">✨</div><h3>Tvoja sansa</h3><p>Svaki igrac pocinje negde. Napravi prvi korak i vidi gde ce te odvesti.</p></article></div></div></section>
+    <section id="pridruzi-se" style="padding-top:0"><div class="wrap"><div class="join"><div><div class="eyebrow">Vidimo se u gradu</div><h2>Spreman za svoju pricu?</h2><p>Pridruzi se nasem Discord serveru, procitaj pravila i javi se zajednici. Dobrodosao!</p></div><div><div class="join-actions"><a class="button" href="https://discord.gg/KyHJZCM8D" target="_blank" rel="noopener">OTVORI DISCORD ↗</a><button class="button secondary" id="connectBtn" type="button">CONNECT</button></div><div class="copy-note" id="copyNote" aria-live="polite">Klikni na Connect da vidis status.</div></div></div></div></section>
+  </main>
+  <main class="product-view" id="productView" hidden><header class="store-hero"><div class="store-brand"><img src="images/apex-roleplay-logo.png" alt=""> APEX ROLEPLAY</div></header><div class="store-layout"><nav class="store-sidebar" id="storeSidebar" aria-label="Kategorije prodavnice"></nav><section id="productCatalog"></section></div></main>
+  <div class="cart-dock" id="cartDock" hidden><span><b id="cartCount">0</b> proizvoda u korpi</span><button id="showCart" type="button">Pregledaj korpu</button></div>
+  <dialog id="cartDialog"><h3>Tvoja korpa</h3><div class="cart-items" id="cartItems"></div><div class="cart-foot"><span id="cartTotal">Ukupno: €0.00</span><button class="cart-close" id="closeCart" type="button">Zatvori</button></div><div class="payment-area"><h4>Izaberi način plaćanja</h4><div class="payment-tabs" role="tablist"><button class="payment-tab" id="cardTab" type="button" role="tab" aria-selected="true">▣ &nbsp; Kartica</button><button class="payment-tab" id="paypalTab" type="button" role="tab" aria-selected="false">℗ &nbsp; PayPal</button></div><section id="cardPaymentPanel" role="tabpanel" style="padding:0"><div class="card-fields-form" id="cardFieldsForm" hidden><label class="card-field-label">Broj kartice</label><div class="card-field-shell card-number-shell"><div id="cardNumberField"></div><div class="payment-brands" aria-label="Visa i Mastercard"><span>VISA</span><span>●●</span></div></div><div class="card-fields-row"><div><label class="card-field-label">Rok važenja</label><div class="card-field-shell"><div id="cardExpiryField"></div></div></div><div><label class="card-field-label">Sigurnosni kod</label><div class="card-field-shell"><div id="cardCvvField"></div></div></div></div><button class="pay-card-button" id="payByCard" type="button">Plati karticom</button></div><div id="cardFallback" hidden></div></section><section id="paypalPaymentPanel" class="paypal-choice" role="tabpanel" hidden style="padding:0"><div id="paypalButton"></div></section><div class="payment-status" id="paymentStatus" aria-live="polite">PayPal plaćanje još nije povezano.</div></div></dialog>
+    <footer><div class="wrap footer-in"><span class="brand"><img class="brand-mark" src="images/apex-roleplay-logo.png" alt=""> APEX ROLEPLAY</span><div class="footer-payments"><small>Načini plaćanja</small><div class="accepted-payments" aria-label="Visa, Mastercard i PayPal"><span>VISA</span><span>mastercard</span><span>PayPal</span></div></div><span>Nezavisna gaming zajednica · © <span id="year"></span></span></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const categories = [
+      {name:'Vip & Master', icon:'👑', accent:'#f5cc63', image:'vip.png', items:['Vip','Master','Vip 3 Meseca','Master 3 Meseca']},
+      {name:'Haker', icon:'⌨️', accent:'#58dfbd', image:'haker.png', items:['Haker','Haker 3 Meseca']},
+      {name:'Hitmen', icon:'🎯', accent:'#ef7777', image:'hitmen.png', items:['Hitmen','Hitmen 3 Meseca']},
+      {name:'Battle Pass', icon:'🎟️', accent:'#b58aff', image:'battle-pass.png', items:['Battle Pass','Battle Pass Level']},
+      {name:'Organizacija', icon:'🏙️', accent:'#65bddc', image:'organization.png', items:['Drzavna Organizacija','Custom Mafija sa Enterijerom','Custom Mafija bez Enterijera']},
+      {name:'Dodatci za mafiju', icon:'🛡️', accent:'#fa6757', image:'mafia-extras.png', items:['Suppressor Dodatak','+5 Slotova za Mafiju','Pancir Dodatak','Auto Mafija','Impound Garaza','Helikopter Garaza','Discord Sef Logovi','Prebacivanje Lidera','Skidanje Opomene']},
+      {name:'Vozila', icon:'🚘', accent:'#62aef2', image:'vehicles.png', items:['Vozilo iz Auto Salona preko 1.000.000','Vozilo iz Auto Salona do 1.000.000','Custom Motor iz Auto Salona','Custom Vozilo iz Auto Salona','Custom Vozilo 1/1','Premium Vozilo iz Auto Salona']},
+      {name:'Helikopter', icon:'🚁', accent:'#829cff', image:'helicopters.png', items:['Swift | 4 Sjedista','Frogger | 4 Sjedista','Maverick | 4 Sjedista','Super Volito | 4 Sjedista','Super Volito 2 | 4 Sjedista','Volatus | 4 Sjedista']},
+      {name:'Unban & Unjail', icon:'🔓', accent:'#5dd6bd', image:'unban.png', items:['Unjail do 100 Minuta','Unjail do 200 Minuta','Unjail do 300 Minuta','Unjail preko 300 Minuta','Unban','Unban Perma']},
+      {name:'Quality of Life', icon:'✨', accent:'#a2df72', image:'quality-of-life.png', items:['Nova Licna Karta','Random Broj Telefona','Custom Broj Telefona']},
+      {name:'Skidanje Discord Muted role', icon:'🔕', accent:'#dc7b8d', image:'muted-role.png', items:['Skidanje Discord Muted Role']}
+    ];
+    const prices = {
+      'Vip':'€10.00','Master':'€20.00','Vip 3 Meseca':'€25.00','Master 3 Meseca':'€45.00',
+      'Haker':'€15.00','Haker 3 Meseca':'€35.00','Hitmen':'€20.00','Hitmen 3 Meseca':'€50.00',
+      'Battle Pass':'€15.00','Battle Pass Level':'€0.50',
+      'Drzavna Organizacija':'€20.00','Custom Mafija sa Enterijerom':'€45.00','Custom Mafija bez Enterijera':'€30.00',
+      'Suppressor Dodatak':'€5.00','+5 Slotova za Mafiju':'€5.00','Pancir Dodatak':'€15.00','Auto Mafija':'€20.00','Impound Garaza':'€20.00','Helikopter Garaza':'€20.00','Discord Sef Logovi':'€50.00','Prebacivanje Lidera':'€5.00','Skidanje Opomene':'€5.00 po opomeni',
+      'Vozilo iz Auto Salona preko 1.000.000':'€10.00','Vozilo iz Auto Salona do 1.000.000':'€7.00','Custom Motor iz Auto Salona':'€20.00','Custom Vozilo iz Auto Salona':'€30.00','Custom Vozilo 1/1':'€40.00','Premium Vozilo iz Auto Salona':'€35.00',
+      'Swift | 4 Sjedista':'€50.00','Frogger | 4 Sjedista':'€30.00','Maverick | 4 Sjedista':'€40.00','Super Volito | 4 Sjedista':'€35.00','Super Volito 2 | 4 Sjedista':'€40.00','Volatus | 4 Sjedista':'€60.00',
+      'Unjail do 100 Minuta':'€3.00','Unjail do 200 Minuta':'€6.00','Unjail do 300 Minuta':'€10.00','Unjail preko 300 Minuta':'€15.00','Unban':'€35.00','Unban Perma':'€50.00',
+      'Nova Licna Karta':'€5.00','Random Broj Telefona':'€3.00','Custom Broj Telefona':'€10.00','Skidanje Discord Muted Role':'€5.00'
+    };
+    const productImages = {
+      'Vip':'vip.png','Master':'master.png','Vip 3 Meseca':'vip-3m.png','Master 3 Meseca':'master-3m.png',
+      'Haker':'haker.png','Haker 3 Meseca':'haker-3m.png','Hitmen':'hitmen.png','Hitmen 3 Meseca':'hitmen-3m.png',
+      'Battle Pass':'battle-pass.png','Battle Pass Level':'battle-pass-level.png',
+      'Drzavna Organizacija':'organization.png','Custom Mafija sa Enterijerom':'custom-mafia-interior.png','Custom Mafija bez Enterijera':'custom-mafia.png',
+      'Suppressor Dodatak':'suppressor.png','+5 Slotova za Mafiju':'mafia-slots.png','Pancir Dodatak':'armor.png','Auto Mafija':'mafia-car.png','Impound Garaza':'impound.png','Helikopter Garaza':'heli-garage.png','Discord Sef Logovi':'discord-safe-logs.png','Prebacivanje Lidera':'leader-transfer.png','Skidanje Opomene':'remove-warning.png',
+      'Vozilo iz Auto Salona preko 1.000.000':'car-over-million.png','Vozilo iz Auto Salona do 1.000.000':'car-under-million.png','Custom Motor iz Auto Salona':'custom-motor.png','Custom Vozilo iz Auto Salona':'custom-car.png','Custom Vozilo 1/1':'custom-car-1of1.png','Premium Vozilo iz Auto Salona':'premium-car.png',
+      'Swift | 4 Sjedista':'swift.png','Frogger | 4 Sjedista':'frogger.png','Maverick | 4 Sjedista':'maverick.png','Super Volito | 4 Sjedista':'super-volito.png','Super Volito 2 | 4 Sjedista':'super-volito-2.png','Volatus | 4 Sjedista':'volatus.png',
+      'Unjail do 100 Minuta':'unjail-100.png','Unjail do 200 Minuta':'unjail-200.png','Unjail do 300 Minuta':'unjail-300.png','Unjail preko 300 Minuta':'unjail-over-300.png','Unban':'unban.png','Unban Perma':'unban-perma.png',
+      'Nova Licna Karta':'identity-card.png','Random Broj Telefona':'random-phone.png','Custom Broj Telefona':'custom-phone.png','Skidanje Discord Muted Role':'muted-role.png'
+    };
+    const productPanel = document.getElementById('productPanel');
+    const productView = document.getElementById('productView');
+    const productCatalog = document.getElementById('productCatalog');
+    let cart = [];
+    try { cart = JSON.parse(localStorage.getItem('apexCart') || '[]'); } catch { cart = []; }
+    const cartDock = document.getElementById('cartDock');
+    const cartDialog = document.getElementById('cartDialog');
+    const updateCart = () => {
+      document.getElementById('cartCount').textContent = cart.length;
+      cartDock.hidden = cart.length === 0;
+      document.getElementById('cartItems').innerHTML = cart.length ? cart.map((item, index) => `<div class="cart-row"><span>${item} · ${prices[item] || 'Cena uskoro'}</span><button type="button" data-remove="${index}">Ukloni</button></div>`).join('') : '<p>Korpa je prazna.</p>';
+      const total = cart.reduce((sum, item) => sum + (Number.parseFloat((prices[item] || '').replace('€','')) || 0), 0);
+      document.getElementById('cartTotal').textContent = `Ukupno: €${total.toFixed(2)}`;
+    };
+    const renderCategory = categoryIndex => {
+      const category = categories[categoryIndex];
+      if (!category) return;
+      document.body.classList.add('product-page');
+      productView.hidden = false;
+      document.getElementById('storeSidebar').innerHTML = `<a href="index.html#paketi">Pocetna</a>${categories.map((item,index) => `<a href="index.html?category=${index}"${index === categoryIndex ? ' class="active" aria-current="page"' : ''}>${item.name}</a>`).join('')}`;
+      productCatalog.innerHTML = `<div class="category-catalog" style="--category-accent:${category.accent}"><div class="product-head"><div><div class="eyebrow">Apex prodavnica</div><h3>${category.name}</h3></div><p>Izaberi proizvod.</p></div><div class="product-grid">${category.items.map((item, n) => `<article class="product-card"><div class="product-art" style="--item-accent:${category.accent}"><img src="images/products/${productImages[item] || category.image}" alt="${item}" loading="lazy"><span class="product-id">APEX · ${String(n + 1).padStart(2,'0')}</span></div><h4>${item}</h4><div class="product-price">${prices[item] || 'Cena uskoro'}</div><button class="add-cart" type="button" data-product="${item}">Dodaj u korpu</button></article>`).join('')}</div></div>`;
+    };
+    document.querySelectorAll('.shop-card').forEach((card, index) => {
+      card.href = `index.html?category=${index}`;
+      card.setAttribute('aria-label', `Otvori kategoriju ${categories[index].name}`);
+    });
+    const requestedCategory = new URLSearchParams(location.search).get('category');
+    if (requestedCategory !== null) renderCategory(Number(requestedCategory));
+    productCatalog.addEventListener('click', event => {
+      const button = event.target.closest('[data-product]');
+      if (!button) return;
+      cart.push(button.dataset.product);
+      try { localStorage.setItem('apexCart', JSON.stringify(cart)); } catch {}
+      updateCart();
+      button.textContent = 'Dodato u korpu ✓';
+    });
+    document.getElementById('showCart').addEventListener('click', () => cartDialog.showModal());
+    document.getElementById('closeCart').addEventListener('click', () => cartDialog.close());
+    document.getElementById('cartItems').addEventListener('click', event => {
+      const button = event.target.closest('[data-remove]');
+      if (!button) return;
+      cart.splice(Number(button.dataset.remove), 1);
+      try { localStorage.setItem('apexCart', JSON.stringify(cart)); } catch {}
+      updateCart();
+    });
+    updateCart();
+    const paymentStatus = document.getElementById('paymentStatus');
+    const cardFieldsForm = document.getElementById('cardFieldsForm');
+    const cardFallback = document.getElementById('cardFallback');
+    const paypalPanel = document.getElementById('paypalPaymentPanel');
+    const switchPaymentTab = method => {
+      const cardSelected = method === 'card';
+      document.getElementById('cardTab').setAttribute('aria-selected', String(cardSelected));
+      document.getElementById('paypalTab').setAttribute('aria-selected', String(!cardSelected));
+      document.getElementById('cardPaymentPanel').hidden = !cardSelected;
+      paypalPanel.hidden = cardSelected;
+    };
+    document.getElementById('cardTab').addEventListener('click', () => switchPaymentTab('card'));
+    document.getElementById('paypalTab').addEventListener('click', () => switchPaymentTab('paypal'));
+    const loadPayPalCheckout = async () => {
+      if (location.protocol === 'file:') {
+        paymentStatus.textContent = 'PayPal plaćanje još nije povezano.';
+        return;
+      }
+      try {
+        const configResponse = await fetch('/api/config');
+        if (!configResponse.ok) throw new Error('Sajt nije pokrenut preko Apex payment servera.');
+        const config = await configResponse.json();
+        if (!config.clientId) {
+          paymentStatus.textContent = 'Dodaj PayPal Client ID i Secret u podešavanja servera.';
+          paymentStatus.classList.add('paypal-unavailable');
+          return;
+        }
+        const sdk = document.createElement('script');
+        sdk.src = `https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(config.clientId)}&currency=EUR&intent=capture&components=buttons,card-fields&enable-funding=card`;
+        sdk.onload = () => {
+          const createOrder = async () => {
+            const response = await fetch('/api/orders', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ items:cart }) });
+            const order = await response.json();
+            if (!response.ok) throw new Error(order.error || 'Nije moguće pokrenuti plaćanje.');
+            return order.id;
+          };
+          const onApprove = async data => {
+            paymentStatus.textContent = 'Potvrđujemo uplatu…';
+            const response = await fetch(`/api/orders/${encodeURIComponent(data.orderID)}/capture`, { method:'POST' });
+            const result = await response.json();
+            if (!response.ok) throw new Error(result.error || 'Uplata nije potvrđena.');
+            cart = [];
+            try { localStorage.removeItem('apexCart'); } catch {}
+            updateCart();
+            paymentStatus.textContent = 'Uplata je uspešno potvrđena. Hvala!';
+          };
+          const onError = error => { paymentStatus.textContent = error?.message || 'Plaćanje nije uspelo. Pokušaj ponovo.'; };
+          const paypalButton = window.paypal.Buttons({ style:{ layout:'vertical', shape:'rect', label:'paypal', height:44 }, createOrder, onApprove, onError });
+          if (paypalButton.isEligible()) paypalButton.render('#paypalButton');
+          const cardButton = window.paypal.Buttons({ fundingSource:window.paypal.FUNDING.CARD, style:{ layout:'vertical', shape:'rect', height:44 }, createOrder, onApprove, onError });
+          if (cardButton.isEligible()) {
+            cardButton.render('#cardFallback');
+            cardFallback.hidden = false;
+          }
+          try {
+            const cardFields = window.paypal.CardFields({ createOrder, onApprove, onError });
+            if (cardFields.isEligible()) {
+              cardFallback.hidden = true;
+              cardFields.NumberField({ placeholder:'1234 1234 1234 1234', style:{ input:{ color:'#f5f6fa', 'font-family':'Inter, system-ui, sans-serif', 'font-size':'14px' }, '.invalid':{ color:'#ff8585' } } }).render('#cardNumberField');
+              cardFields.ExpiryField({ placeholder:'MM / YY', style:{ input:{ color:'#f5f6fa', 'font-family':'Inter, system-ui, sans-serif', 'font-size':'14px' } } }).render('#cardExpiryField');
+              cardFields.CVVField({ placeholder:'CVC', style:{ input:{ color:'#f5f6fa', 'font-family':'Inter, system-ui, sans-serif', 'font-size':'14px' } } }).render('#cardCvvField');
+              cardFieldsForm.hidden = false;
+              document.getElementById('payByCard').addEventListener('click', async () => {
+                const button = document.getElementById('payByCard');
+                button.disabled = true;
+                paymentStatus.textContent = 'Obrađujem karticu…';
+                try { await cardFields.submit(); }
+                catch (error) { onError(error); }
+                finally { button.disabled = false; }
+              });
+              paymentStatus.textContent = 'Unesi podatke Visa ili Mastercard kartice.';
+            } else {
+              paymentStatus.textContent = cardButton.isEligible() ? 'Unesi karticu preko PayPal opcije ispod.' : 'PayPal ne nudi kartično plaćanje za ovo podešavanje naloga.';
+            }
+          } catch (error) {
+            paymentStatus.textContent = cardButton.isEligible() ? 'Karticu možeš uneti kroz PayPal checkout ispod.' : 'Kartično plaćanje nije dostupno za ovo PayPal podešavanje.';
+          }
+          if (paypalButton.isEligible()) {
+            paymentStatus.textContent = 'Izaberi Kartica ili PayPal.';
+          } else if (!cardButton.isEligible()) {
+            paymentStatus.textContent = 'PayPal još ne nudi dostupnu opciju plaćanja za ovaj nalog.';
+          }
+        };
+        sdk.onerror = () => { paymentStatus.textContent = 'PayPal Checkout trenutno nije dostupan. Pokušaj ponovo kasnije.'; };
+        document.head.appendChild(sdk);
+      } catch (error) {
+        paymentStatus.textContent = 'PayPal plaćanje još nije povezano.';
+        paymentStatus.classList.add('paypal-unavailable');
+      }
+    };
+    loadPayPalCheckout();
+    document.getElementById('connectBtn').addEventListener('click', () => {
+      document.getElementById('copyNote').textContent = 'Connect opcija uskoro.';
+    });
+  </script>
+</body>
+</html>
